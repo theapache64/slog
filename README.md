@@ -53,6 +53,9 @@ Slog.init(formUrl = "https://docs.google.com/forms/d/e/32423sdfsd6757/viewform?u
 Slog.d { "Your Log Goes Here" }
 ```
 
+and you'll see your logs in the destination sheet like this
+
+![image](https://github.com/user-attachments/assets/5e6719e8-12ed-4696-b2a0-fe84346c8930)
 
 ## ✍️ Author
 
