@@ -4,10 +4,12 @@ kotlin = "2.1.0"
 agp = "8.6.1"
 compose = "1.7.3"
 androidx-activityCompose = "1.9.3"
+retrosheet = "3.0.0-alpha02"
 
 [libraries]
 
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+retrosheet = { module = "io.github.theapache64:retrosheet", version.ref = "retrosheet" }
 
 [plugins]
 
