@@ -9,10 +9,10 @@ ktorfit = "2.5.0"
 ksp = "2.1.20-1.0.32"
 ktor = "3.1.0"
 coroutines = "1.10.1"
+publish = "0.31.0"
 
 [libraries]
 
-androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 retrosheet = { module = "io.github.theapache64:retrosheet", version.ref = "retrosheet" }
 ktorfit = { module = "de.jensklingenberg.ktorfit:ktorfit-lib", version.ref = "ktorfit" }
 ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
@@ -21,11 +21,11 @@ coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", ve
 [plugins]
 
 multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-android-library = { id = "com.android.library", version.ref = "agp" }
 compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-android-application = { id = "com.android.application", version.ref = "agp" }
 ktorfit = { id = "de.jensklingenberg.ktorfit", version.ref = "ktorfit" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+publish = {id = "com.vanniktech.maven.publish", version.ref= "publish"}
+
 
