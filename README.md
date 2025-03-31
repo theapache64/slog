@@ -19,7 +19,15 @@ Slog.d { "Your log message goes here" }
 
 ## ⌨️ Usage
 
-1. Install the dependency
+1. Create a Google form with `message` field, link the form with Google Sheet and copy the public URL
+
+![image](https://github.com/user-attachments/assets/93184b12-01d6-45a4-b71a-d234bd93cfc9)
+
+![image](https://github.com/user-attachments/assets/4b4cfdf9-777f-4183-a191-f70ff683648f)
+
+
+
+2. Install the dependency
 
 ```kotlin
 repositories {
@@ -31,20 +39,18 @@ dependencies {
 }
 ```
 
-1. Init the library
+3. Init the library and pass the Google form link
 
+```kotlin
+Slog.init(formUrl = "https://docs.google.com/forms/d/e/32423sdfsd6757/viewform?usp=dialog")
 ```
 
+4. Finally, start logging 🚀
+
+```kotlin
+Slog.d { "Your Log Goes Here" }
 ```
 
-1. Step 3
-
-
-## 🏗 Project Status
-
-|![](https://i.giphy.com/media/7Sk1DclBgQoVyGCSPx/giphy.gif) |
-|:--:|
-| Under construction |
 
 ## ✍️ Author
 
@@ -73,21 +79,10 @@ Please make sure to update tests as appropriate.
 
 Give a ⭐️ if this project helped you!
 
-<a href="https://www.patreon.com/theapache64">
-  <img alt="Patron Link" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160"/>
-</a>
-
 <a href="https://www.buymeacoffee.com/theapache64" target="_blank">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="160">
 </a>
 
-<a href="https://www.paypal.me/theapache64" target="_blank">
-    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donation" width="160">
-</a>
-
-## ☑️ TODO
-
-- [ ] Task 1
 
 ## 📝 License
 
