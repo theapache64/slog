@@ -1,7 +1,10 @@
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.android.library)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.ktorfit)
     id("convention.publication")
+    alias(libs.plugins.serialization)
 }
 
 group = "io.github.theapache64.slog"
@@ -19,7 +22,10 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
+            implementation(libs.ktorfit)
             implementation(libs.retrosheet)
+            implementation(libs.ktor.core)
+            implementation(libs.coroutines.core)
         }
 
         commonTest.dependencies {
