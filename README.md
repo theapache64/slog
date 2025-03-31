@@ -29,6 +29,8 @@ Slog.d { "Your log message goes here" }
 
 2. Install the dependency
 
+![latestVersion](https://img.shields.io/github/v/release/theapache64/slog)
+
 ```kotlin
 repositories {
     mavenCentral()
