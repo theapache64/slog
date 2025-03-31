@@ -1,6 +1,6 @@
 ![](cover.jpeg)
 
-# slog
+# 🪵 slog
 
 ![buildStatus](https://img.shields.io/github/workflow/status/theapache64/slog/Java%20CI%20with%20Gradle?style=plastic)
 ![latestVersion](https://img.shields.io/github/v/release/theapache64/slog)
@@ -12,16 +12,31 @@
 
 ### ✨ Demo
 
-![](demo.gif)
+```kotlin
+Slog.d { "Your log message goes here" }
+```
 
-## 🦿 Prerequisites
-
-- Java 8 or above
 
 ## ⌨️ Usage
 
-1. Step 1
-1. Step 2
+1. Install the dependency
+
+```kotlin
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.github.theapache64:slog:<latest.version>")
+}
+```
+
+1. Init the library
+
+```
+
+```
+
 1. Step 3
 
 
